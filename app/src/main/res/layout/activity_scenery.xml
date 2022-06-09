@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SceneryActivity">
+
+    <TextView
+        android:id="@+id/Sbonetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:text="@string/bones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:drawableStartCompat="@drawable/bonesmall" />
+
+    <TextView
+        android:id="@+id/Sbpctxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bonespertap"
+        android:textSize="15sp"
+        android:textAllCaps="true"
+        app:drawableStartCompat="@drawable/bonexsmall"
+        app:layout_constraintBottom_toBottomOf="@+id/Sbonetxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.592" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSDig"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sbonetxt">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@+id/btnSDig"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Sbonetxt">
+
+
+            <TextView
+                android:id="@+id/txtSkins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/skinstxt"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btnStarterDoggo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/roundedcorner"
+                android:src="@drawable/skinstartersmall"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtSkins" />
+
+            <TextView
+                android:id="@+id/txtStarterDoggo"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/starterdoggotxt"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/btnStarterDoggo"
+                app:layout_constraintStart_toEndOf="@id/btnStarterDoggo"
+                app:layout_constraintTop_toTopOf="@id/btnStarterDoggo" />
+
+            <ImageButton
+                android:id="@+id/btnDogeDoggo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/roundedcorner"
+                android:src="@drawable/skindogesmall"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnStarterDoggo" />
+
+            <TextView
+                android:id="@+id/txtDogeDoggo"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:layout_constrainedWidth="true"
+                android:text="@string/dogedoggotxt"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/btnDogeDoggo"
+                app:layout_constraintStart_toEndOf="@id/btnDogeDoggo"
+                app:layout_constraintTop_toTopOf="@id/btnDogeDoggo" />
+
+            <ImageButton
+                android:id="@+id/btnPlushieDoggo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/roundedcorner"
+                android:src="@drawable/skinplushsmall"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnDogeDoggo" />
+
+            <TextView
+                android:id="@+id/txtPlushieDoggo"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/plushiedoggotxt"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/btnPlushieDoggo"
+                app:layout_constraintStart_toEndOf="@id/btnPlushieDoggo"
+                app:layout_constraintTop_toTopOf="@id/btnPlushieDoggo" />
+
+            <!---->
+
+            <TextView
+                android:id="@+id/txtBackGrounds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/backgroundstxt"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnPlushieDoggo" />
+
+            <ImageButton
+                android:id="@+id/btnStarterBg"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="2dp"
+                android:background="#000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bgstarterxsmall"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtBackGrounds" />
+
+            <TextView
+                android:id="@+id/txtStarterBg"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/starterbgtxt"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/btnStarterBg"
+                app:layout_constraintStart_toEndOf="@id/btnStarterBg"
+                app:layout_constraintTop_toTopOf="@id/btnStarterBg" />
+
+            <ImageButton
+                android:id="@+id/btnFieldBg"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="2dp"
+                android:background="#000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bgfieldxsmall"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnStarterBg" />
+
+            <TextView
+                android:id="@+id/txtFieldBg"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fieldbgtxt"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/btnFieldBg"
+                app:layout_constraintStart_toEndOf="@id/btnFieldBg"
+                app:layout_constraintTop_toTopOf="@id/btnFieldBg" />
+
+            <ImageButton
+                android:id="@+id/btnSpaceBg"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="2dp"
+                android:background="#000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bgspacexsmall"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnFieldBg" />
+
+            <TextView
+                android:id="@+id/txtSpaceBg"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/spacebgtxt"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/btnSpaceBg"
+                app:layout_constraintStart_toEndOf="@id/btnSpaceBg"
+                app:layout_constraintTop_toTopOf="@id/btnSpaceBg" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnSDig"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/digbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/btnSUpgrades"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/upgradebtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

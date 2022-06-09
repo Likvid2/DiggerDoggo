@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Digger Doggo</string>
+    <string name="bones">: %1$d</string>
+    <string name="bonespertap">/tap: %1$d</string>
+    <string name="upgradebtn">Upgrades</string>
+    <string name="scenerybtn">Scenery</string>
+    <string name="digbtn">Dig</string>
+    <string name="more">More</string>
+    <string name="resetbtn">reset</string>
+    <string name="skinstxt">Skins:</string>
+    <string name="starterdoggotxt">Simple starter doggo</string>
+    <string name="dogedoggotxt">This one looks familiar somehow…</string>
+    <string name="plushiedoggotxt">This might be a plushie, but he is very determined</string>
+    <string name="backgroundstxt">Backgrounds:</string>
+    <string name="starterbgtxt">Just a basic muddy road to dig some bones on</string>
+    <string name="fieldbgtxt">A nice field with flowers. What more could you ask for?</string>
+    <string name="spacebgtxt">Okay. What? How are there even bones here?</string>
+</resources>

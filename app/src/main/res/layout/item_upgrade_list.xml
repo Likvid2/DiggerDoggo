@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingBottom="12dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/UpgradeItemIconImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:padding="8dp"
+        tools:src="@drawable/bonesmall" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/UpgradeItemNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E91E63"
+            android:textSize="15sp"
+            android:textAllCaps="true"
+            tools:text="Bowl" />
+
+        <TextView
+            android:id="@+id/UpgradeItemDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="First of all let's get something to eat from." />
+
+        <TextView
+            android:id="@+id/UpgradeItemEffectTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:drawableStartCompat="@drawable/bonexsmall"
+            tools:text="/tap: +1" />
+
+        <TextView
+            android:id="@+id/UpgradeItemPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:drawableEndCompat="@drawable/bonexsmall"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            tools:text="100" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/UpgradeItemBuyButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitXY"
+        android:src="@drawable/buybutton" />
+
+
+
+</LinearLayout>
